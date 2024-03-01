@@ -2,6 +2,8 @@ package org.ptech.java.citas.entities;
 
 import java.time.LocalDate;
 
+import org.ptech.java.citas.entities.enums.EstadoCita;
+
 public class Cita {
     private int id;
     private LocalDate fecha;
