@@ -23,6 +23,11 @@ public class Enfermero extends Usuario {
         this.procedimientos = new ArrayList<String>();
     }
 
+    @Override
+    public String toString() {
+        return "Enfermero [procedimientos=" + procedimientos + "id ="+ super.id+ "Nombre ="+ super.nombre +"Apellido ="+ super.apellido + "]";
+    }
+
     public void addProcedure(String procedure) {
         // añadir el procedimiento a
         // a la lista de procedimiento

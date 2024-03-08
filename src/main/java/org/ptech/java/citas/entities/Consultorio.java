@@ -5,6 +5,12 @@ public class Consultorio {
     private String direccion;
     private int numero;
 
+    
+    @Override
+    public String toString() {
+        return "Consultorio [id=" + id + ", direccion=" + direccion + ", numero=" + numero + "]";
+    }
+
     public Consultorio() {
         
     }
