@@ -8,13 +8,15 @@ import org.ptech.java.citas.entities.enums.EstadoCita;
 public class CitaEnfermero extends Cita implements IAgendable{
 
     Enfermero enfermero;
-    public String procesoRealizar;
+    private String procesoRealizar;
     EstadoCita  estadoCita;
     public CitaEnfermero() {
     }
-    public CitaEnfermero(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio) {
+    public CitaEnfermero(int id, LocalDateTime fecha, Paciente paciente, Consultorio consultorio,Enfermero enfermero,String procesoRealizar) {
         super(id, fecha, paciente, consultorio);
         this.estadoCita=EstadoCita.AGENDADA;
+        this.enfermero= enfermero ;
+        this.procesoRealizar =procesoRealizar ;
     }
     public Enfermero getEnfermero() {
         return enfermero;
