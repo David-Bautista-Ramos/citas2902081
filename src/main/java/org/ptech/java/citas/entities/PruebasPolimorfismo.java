@@ -10,7 +10,7 @@ import org.ptech.java.citas.entities.enums.TipoSangre;
 public class PruebasPolimorfismo {
 
     public static void main(String[] args) {
-        // INSTANCIAR UN USUARIO
+        // INSTANCIAR UN MEDICO
         Usuario u = new Medico(1,
                 "Ricardo",
                 "Martinez",
@@ -20,7 +20,6 @@ public class PruebasPolimorfismo {
                 Especialidad.DERMATOLOGIA);
 
         System.out.println(u.toString());
-
 
         // INSTANCIAR UN PACIENTE
         Usuario pa1 = new Paciente(12,
@@ -42,8 +41,9 @@ public class PruebasPolimorfismo {
 
         System.out.println(en1.toString());
 
-        
-
+        Usuario u1 =new Usuario(12,"Raquel","Jimenez",TipoDocumento.PPT,130928318230L) {
+        };
+         System.out.println(u1.toString());
     }
 
 }
